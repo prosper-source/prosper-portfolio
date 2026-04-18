@@ -1,5 +1,5 @@
 /* =========================
-   BASE RESET
+   RESET
 ========================= */
 html {
     scroll-behavior: smooth;
@@ -19,7 +19,7 @@ body {
 }
 
 /* =========================
-   NAVBAR (CLEAN FIX)
+   NAVBAR (PRO LOOK)
 ========================= */
 .navbar {
     display: flex;
@@ -49,7 +49,7 @@ body {
 }
 
 /* =========================
-   HERO (FIXED ALIGNMENT)
+   HERO SECTION (FIXED ALIGNMENT)
 ========================= */
 .home {
     min-height: 90vh;
@@ -75,7 +75,7 @@ body {
 }
 
 /* =========================
-   CTA BUTTONS (FIXED STANDOUT)
+   CTA BUTTONS (IMPORTANT FIX)
 ========================= */
 .cta {
     display: flex;
@@ -105,7 +105,7 @@ body {
 }
 
 /* =========================
-   SECTIONS
+   SECTIONS (SPACING FIX)
 ========================= */
 .section {
     padding: 70px 20px;
@@ -117,7 +117,7 @@ body {
 }
 
 /* =========================
-   PROJECTS (PRO GRID FIX)
+   PROJECTS (MODERN GRID)
 ========================= */
 .projects {
     display: grid;
@@ -138,7 +138,7 @@ body {
 }
 
 /* =========================
-   CONTACT FORM (PRO LOOK)
+   CONTACT FORM (PROFESSIONAL)
 ========================= */
 .contact-form {
     display: flex;
@@ -146,6 +146,7 @@ body {
     gap: 12px;
     max-width: 420px;
     margin: auto;
+    margin-top: 20px;
 }
 
 .contact-form input,
@@ -189,16 +190,16 @@ body {
 }
 
 .light-mode .navbar {
-    background: white;
+    background: #fff;
 }
 
 .light-mode .project-card {
-    background: white;
-    color: black;
+    background: #fff;
+    color: #111;
 }
 
 .light-mode .contact-form input,
 .light-mode .contact-form textarea {
     background: #eee;
-    color: black;
+    color: #111;
 }
