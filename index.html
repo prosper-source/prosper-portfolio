@@ -10,9 +10,22 @@
 
 <body>
 
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2>Prosper Olamide</h2>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+
+        <button onclick="toggleMode()" class="toggle-btn">🌙 Mode</button>
+    </div>
+</nav>
+
 <!-- HERO -->
 <section class="home">
-    <img src="profile.jpg" alt="profile image">
+    <img src="profile.jpg" alt="profile">
 
     <h1 id="typing"></h1>
 
@@ -20,13 +33,20 @@
         Frontend Developer | HTML • CSS • JavaScript
     </p>
 
-    <!-- CTA BUTTONS -->
     <div class="cta">
         <a href="#projects" class="btn">View My Work</a>
         <a href="#contact" class="btn outline">Hire Me</a>
     </div>
 </section>
-<button onclick="toggleMode()" class="toggle-btn">🌙 Toggle Theme</button>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am Prosper Olamide Bamidele, a frontend developer in training building modern responsive websites.
+    </p>
+</section>
+
 <!-- PROJECTS -->
 <section id="projects" class="section">
     <h2>Projects</h2>
@@ -44,9 +64,9 @@
     <h2>Contact Me</h2>
 
     <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
 
         <button type="submit">Send Message</button>
     </form>
