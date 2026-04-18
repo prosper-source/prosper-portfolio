@@ -1,6 +1,9 @@
-/* =========================
-   TYPING EFFECT
-========================= */
+/* TOGGLE MODE */
+function toggleMode() {
+    document.body.classList.toggle("light-mode");
+}
+
+/* TYPING EFFECT */
 const text = "Hi, I'm Prosper Olamide 🚀";
 let i = 0;
 
@@ -19,14 +22,11 @@ function typeEffect() {
     type();
 }
 
-/* =========================
-   DARK / LIGHT TOGGLE
-========================= */
-function toggleMode() {
-    document.body.classList.toggle("light-mode");
-}
-
-/* =========================
-   INIT ON LOAD
-========================= */
 window.addEventListener("DOMContentLoaded", typeEffect);
+
+/* CONTACT FORM ALERT */
+document.querySelector(".contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("🔥 Message sent successfully!");
+    this.reset();
+});
