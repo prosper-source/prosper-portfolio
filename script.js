@@ -1,21 +1,32 @@
-function sayHi() {
-    alert("🔥 Thanks for visiting my portfolio!");
+/* =========================
+   TYPING EFFECT
+========================= */
+const text = "Hi, I'm Prosper Olamide 🚀";
+let i = 0;
+
+function typeEffect() {
+    const el = document.getElementById("typing");
+    if (!el) return;
+
+    function type() {
+        if (i < text.length) {
+            el.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, 60);
+        }
+    }
+
+    type();
 }
 
+/* =========================
+   DARK / LIGHT TOGGLE
+========================= */
 function toggleMode() {
     document.body.classList.toggle("light-mode");
 }
 
-/* TYPING EFFECT */
-const text = "Hi, I'm Prosper Olamide Bamidele 🚀";
-let index = 0;
-
-function typeEffect() {
-    if (index < text.length) {
-        document.getElementById("typing").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(typeEffect, 50);
-    }
-}
-
-window.onload = typeEffect;
+/* =========================
+   INIT ON LOAD
+========================= */
+window.addEventListener("DOMContentLoaded", typeEffect);
