@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prosper Olamide Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2>Prosper Olamide</h2>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button onclick="toggleMode()">🌙 Mode</button>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section class="home">
+        <img src="profile.jpg" alt="profile image">
+
+        <h1><span id="typing"></span></h1>
+        <p>Frontend Developer and more</p>
+
+        <button onclick="sayHi()">Say Hi</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am Prosper Olamide Bamidele, a frontend developer in training.
+            I build modern websites using HTML, CSS, and JavaScript.
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+
+        <div class="projects">
+            <div class="project-card">
+                <h3>My First Project</h3>
+                <p>This is my first frontend project.</p>
+
+                <div class="project-buttons">
+                    <button>Live Demo</button>
+                    <button>GitHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: prosperolamide0@gmail.com</p>
+    </section>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
