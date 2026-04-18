@@ -2,28 +2,37 @@ html {
     scroll-behavior: smooth;
 }
 
+/* =========================
+   THEME COLORS
+========================= */
 :root {
     --bg: #111;
-    --text: white;
-    --card: #222;
-    --accent: red;
+    --text: #ffffff;
+    --card: #1e1e1e;
+    --accent: #ff3b3b;
 }
 
 .light-mode {
     --bg: #f5f5f5;
-    --text: black;
-    --card: white;
-    --accent: darkred;
+    --text: #111;
+    --card: #ffffff;
+    --accent: #ff3b3b;
 }
 
+/* =========================
+   BASE
+========================= */
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
+    transition: 0.3s ease;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -32,31 +41,47 @@ body {
     background: var(--card);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .nav-links {
     display: flex;
     gap: 15px;
+    align-items: center;
 }
 
 .nav-links a {
     color: var(--text);
     text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-/* HOME */
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* =========================
+   HOME SECTION
+========================= */
 .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
     text-align: center;
-    padding: 60px 20px;
 }
 
 .home img {
     width: 150px;
+    height: 150px;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
 
 .home h1 {
-    font-size: 28px;
+    font-size: 32px;
     margin: 10px 0;
 }
 
@@ -64,47 +89,98 @@ body {
     opacity: 0.8;
 }
 
-/* BUTTON */
+/* =========================
+   BUTTONS
+========================= */
 button {
     padding: 10px 15px;
-    background: var(--accent);
     border: none;
+    background: var(--accent);
     color: white;
-    margin-top: 10px;
     cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-/* SECTION */
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 .section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
-/* PROJECTS */
+/* =========================
+   PROJECTS
+========================= */
 .projects {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 .project-card {
     background: var(--card);
-    padding: 15px;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
     border-radius: 10px;
-    width: 300px;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
 }
 
 .project-buttons {
+    margin-top: 10px;
     display: flex;
     gap: 10px;
     justify-content: center;
 }
 
-/* TYPING CURSOR */
+/* =========================
+   TYPING CURSOR
+========================= */
 #typing::after {
     content: "|";
     animation: blink 1s infinite;
 }
 
 @keyframes blink {
-    50% { opacity: 0; }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home {
+        padding: 60px 20px;
+    }
+
+    .project-card {
+        width: 90%;
+    }
 }
