@@ -3,150 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Prosper Bamidele | Frontend Developer</title>
+<title>Prosper Portfolio</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-:root{
-  --bg:#0f172a;
-  --card:#1e293b;
-  --accent:#38bdf8;
-  --text:#e2e8f0;
-}
-
-body{
-  margin:0;
-  font-family:Inter;
-  background:var(--bg);
-  color:var(--text);
-}
-
-header{
-  text-align:center;
-  padding:70px 20px;
-  background:#020617;
-}
-
-header h1{font-size:2.6rem;}
-header p{color:#94a3b8;}
-
-.btn{
-  display:inline-block;
-  margin:10px;
-  padding:10px 18px;
-  background:var(--accent);
-  color:black;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:600;
-}
-
-section{
-  max-width:1000px;
-  margin:auto;
-  padding:50px 20px;
-}
-
-h2{
-  border-left:4px solid var(--accent);
-  padding-left:10px;
-  margin-bottom:20px;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-
-.card{
-  background:var(--card);
-  padding:20px;
-  border-radius:12px;
-  transition:0.3s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-}
-
-footer{
-  text-align:center;
-  padding:20px;
-  background:#020617;
-  color:#94a3b8;
-}
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-<h1>Prosper Olamide Bamidele</h1>
-<p>Frontend Developer | Virtual Assistant</p>
+<!-- HERO -->
+<section class="hero">
+  <h1>Hi, I'm Prosper</h1>
+  <p>Frontend Developer | Virtual Assistant | Remote Job Seeker</p>
 
-<a class="btn" href="https://github.com/prosper-source">GitHub</a>
-<a class="btn" href="#">Download CV</a>
-</header>
-
-<section>
-<h2>About Me</h2>
-<p>
-I am a self-taught Frontend Developer and Virtual Assistant passionate about building responsive websites and supporting digital business operations.
-I enjoy solving problems using code and creating clean user interfaces.
-</p>
+  <a href="#projects" class="btn">View My Work</a>
 </section>
 
-<section>
-<h2>Projects</h2>
+<!-- ABOUT -->
+<section class="section">
+  <h2>About Me</h2>
 
-<div class="grid">
+  <div class="card">
+    Frontend Developer | Virtual Assistant | Remote Job Seeker
+    <br><br>
 
-<div class="card">
-<h3>Quiz Game App</h3>
-<p>Interactive quiz game with scoring system and dynamic UI.</p>
-</div>
+    I have undergone both physical classroom training and online learning in frontend development. I specialize in building responsive, user-friendly websites using HTML, CSS, and JavaScript.
 
-<div class="card">
-<h3>Portfolio Website</h3>
-<p>Personal portfolio showcasing development projects.</p>
-</div>
+    <br><br>
 
-<div class="card">
-<h3>Calculator App</h3>
-<p>Functional calculator built with JavaScript.</p>
-</div>
-
-<div class="card">
-<h3>Weather App</h3>
-<p>Real-time weather data using API integration.</p>
-</div>
-
-</div>
+    I am also experienced in virtual assistance and I am currently seeking remote opportunities where I can contribute to real projects and grow professionally in a global work environment.
+  </div>
 </section>
 
-<section>
-<h2>Skills</h2>
+<!-- SKILLS -->
+<section class="section">
+  <h2>Skills</h2>
 
-<div class="grid">
-<div class="card">HTML5</div>
-<div class="card">CSS3</div>
-<div class="card">JavaScript</div>
-<div class="card">Git & GitHub</div>
-<div class="card">Virtual Assistant</div>
-<div class="card">API Integration</div>
-</div>
+  <div class="grid">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">GitHub</div>
+    <div class="card">Netlify</div>
+    <div class="card">Virtual Assistance</div>
+  </div>
 </section>
 
-<section>
-<h2>Contact</h2>
-<p>Email: prosperolamide0@gmail.com</p>
-<p>Phone: +234 814 833 3847</p>
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>NLU Clan Website</h3>
+      <p>Gaming community website with modern UI, WhatsApp join system, and responsive design.</p>
+    </div>
+
+    <div class="card">
+      <h3>Personal Portfolio Website</h3>
+      <p>Professional portfolio showcasing my frontend development skills and remote job readiness.</p>
+    </div>
+
+    <div class="card">
+      <h3>ClientFlow (SaaS Concept)</h3>
+      <p>Freelancer management system idea for handling clients, projects, and payment tracking.</p>
+    </div>
+
+    <div class="card">
+      <h3>Login & Authentication UI</h3>
+      <p>Clean login page UI with form validation and responsive design using HTML, CSS, and JavaScript.</p>
+    </div>
+
+    <div class="card">
+      <h3>Weather App UI</h3>
+      <p>Simple weather interface design consuming API data with clean modern layout.</p>
+    </div>
+
+    <div class="card">
+      <h3>Landing Page Designs</h3>
+      <p>Multiple responsive landing pages built for practice, focusing on UI/UX and layout structure.</p>
+    </div>
+
+  </div>
+</section>
+<!-- EXPERIENCE -->
+<section class="section">
+  <h2>Experience</h2>
+
+  <div class="card">
+    Frontend Developer Training (Physical + Online)
+    <br><br>
+    I have gained hands-on experience through structured classroom training and online platforms, building multiple frontend projects and improving my problem-solving skills.
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <h2>Contact Me</h2>
+
+  <div class="card">
+    Email: prosperolamide0@gmail.com <br>
+    WhatsApp: 2348148333847 <br>
+    GitHub: prosper-source
+  </div>
 </section>
 
 <footer>
-© 2026 Prosper Bamidele
+© 2026 Prosper Portfolio • Open for Remote Jobs
 </footer>
 
 </body>
